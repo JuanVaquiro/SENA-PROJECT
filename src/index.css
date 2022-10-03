@@ -105,6 +105,12 @@
   }
 }
 
+@media (max-width: 640px){
+  .formData{
+    padding: 12px;
+  }
+}
+
 /* FIN index */
  
 .footer{

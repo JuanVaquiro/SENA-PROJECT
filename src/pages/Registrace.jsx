@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Alert from "../components/Alert";
 import { useAuth } from "../context/autoContext";
 
 const Registrace = () => {
@@ -23,11 +24,7 @@ const Registrace = () => {
       await Signup(user.email, user.password);
       navigate('/')
     } catch (error) {
-      if (error.code === 'auth/internal-error') {
-        setError('Error! Correo invalido')
-      } else {
-        setError('Error! la contrasena debe ser mayor de 6 caracteres')
-      }
+      setError(error.message)
     };
   }
 
@@ -59,7 +56,7 @@ const Registrace = () => {
             onChange={HanldeChange}
           />
         </div>
-        { Error && <p>{Error}</p> }
+        { Error && <Alert message={Error} /> }
         <button type="submit" className="btn btn-primary">
           Registrase
         </button>

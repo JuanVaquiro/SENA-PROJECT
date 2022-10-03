@@ -1,13 +1,8 @@
 import Nabvar from './components/Nabvar'
 import cicla from './assets/ciclista.png'
 import { Link } from 'react-router-dom';
-import { useAuth } from './context/autoContext';
 
 function App() {
-
-  const {user} =  useAuth()
-  console.log(user)
-  
   return (
     <div className="App">
       <Nabvar />

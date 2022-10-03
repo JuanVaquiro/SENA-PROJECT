@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import App from './App'
-import IniciarSesion from './components/IniciarSesion'
-import Registrace from './components/Registrace'
 import { AutoProvider } from './context/autoContext'
+import App from './App'
+import IniciarSesion from './pages/IniciarSesion'
+import Registrace from './pages/Registrace'
+import IndexContents from './pages/IndexContents'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -15,6 +16,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />} />
           <Route path="login" element={<IniciarSesion />} />
           <Route path="Registrace" element={<Registrace />} />
+        </Routes>
+        <Routes>
+          <Route path="Index" element={<IndexContents />} />
         </Routes>
       </BrowserRouter>
     </AutoProvider>
