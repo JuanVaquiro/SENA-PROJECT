@@ -17,7 +17,7 @@ function App() {
               <span className="mainSpan"> Administrativo</span>
             </h1>
             <div className="imgContener-div_4">
-              <img src={cicla} alt="Logo" />
+              <img className='img-cilca' src={cicla} alt="Logo" />
             </div>
           </div>
         </div>
