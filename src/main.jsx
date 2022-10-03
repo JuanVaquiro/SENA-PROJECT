@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <AutoProvider>
       <BrowserRouter>
         <Routes>
+          <Route index element={<App />} />
           <Route path="/" element={<App />} />
           <Route path="login" element={<IniciarSesion />} />
           <Route path="Registrace" element={<Registrace />} />
@@ -24,3 +25,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </AutoProvider>
   </React.StrictMode>
 );
+ 
