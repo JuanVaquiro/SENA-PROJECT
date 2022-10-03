@@ -22,7 +22,7 @@ const Registrace = () => {
     setError('')
     try {
       await Signup(user.email, user.password);
-      navigate('/')
+      navigate('/Index')
     } catch (error) {
       setError(error.message)
     };

@@ -9,7 +9,7 @@ const IniciarSesion = () => {
     password: "",
   });
 
-  const { Login, LoginWithGoogle } = useAuth();
+  const { Login, LoginWithGoogle, ResetPassword } = useAuth();
   const navigate = useNavigate();
   const [Error, setError] = useState("");
 
@@ -32,6 +32,16 @@ const IniciarSesion = () => {
     try {
       await LoginWithGoogle()
       navigate("/Index");   
+    } catch (error) {
+      setError(error.message)
+    }
+  }
+
+  const HandleResetPassword = async () => { 
+    if(!user.email) return setError('Por favor Ingresar un correo')
+    try {
+      await ResetPassword(user.email)
+      setError('hemos enviado un correo de recuperacion de contraseña al correo vinculado')
     } catch (error) {
       setError(error.message)
     }
@@ -90,6 +100,14 @@ const IniciarSesion = () => {
           <button type="submit" className="btn btn-primary">
             Iniciar
           </button>
+
+          <a 
+          onClick={HandleResetPassword}
+          style={{ margin: "10px" }} 
+          href="#!">
+          Olvidaste tu contraseña?
+          </a>
+
         </form>
          <button className="" onClick={HanldeGoogleSignin} >
             Iniciar con Google 
