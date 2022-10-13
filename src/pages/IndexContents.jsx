@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/autoContext'
+import TableProduct from './TableProduct'
 
 const IndexContents = () => {
   const { User, Logout, Loading } = useAuth()
@@ -24,6 +25,8 @@ const IndexContents = () => {
         <button className='btn btn-danger' onClick={HanldeLogout}>
             Cerrar Sesion
         </button>
+
+        <TableProduct />
     </div>
   )
 }

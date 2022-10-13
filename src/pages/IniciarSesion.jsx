@@ -49,6 +49,7 @@ const IniciarSesion = () => {
 
   return (
     <Fragment>
+      <div>
       <div className="split left">
         <div className="centered">
           <h2 className="subtitulo-left">Bienvenido</h2>
@@ -107,11 +108,16 @@ const IniciarSesion = () => {
           href="#!">
           Olvidaste tu contraseña?
           </a>
+          
+          <div>
+            <button className="btn btn-light" onClick={HanldeGoogleSignin} >
+              Iniciar con Gmail 
+              <img src="https://blenderartists.org/uploads/default/original/4X/c/7/8/c788ce085235238219fca467b045cdc61ed6c7dd.png" alt="google"  width="36" height="28" />
+            </button> 
+          </div>
 
         </form>
-         <button className="" onClick={HanldeGoogleSignin} >
-            Iniciar con Google 
-          </button> 
+      </div>
       </div>
     </Fragment>
   );
