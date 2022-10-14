@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Constante from '../constan';
 
 const TableProduct = () => {
@@ -17,13 +17,12 @@ const TableProduct = () => {
     GetProduct()
   }, [])
   
-
-  console.log('data ',product);
-
   return (
     <Fragment>
     <div>
-    <button className='btn btn-success'>Nuevo Producto</button>
+    <Link to="/IngresarProducto">
+      <button className='btn btn-success'>Nuevo Producto</button>
+    </Link>
     </div>
     <table className="table table-striped table-hover">
       <thead className='table-dark'>
@@ -56,7 +55,6 @@ const TableProduct = () => {
       </tbody>
     </table>
     </Fragment>
-  
   )
 }
 

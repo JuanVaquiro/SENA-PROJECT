@@ -6,6 +6,7 @@ import App from './App'
 import IniciarSesion from './pages/IniciarSesion'
 import Registrace from './pages/Registrace'
 import IndexContents from './pages/IndexContents'
+import InsertProduct from './pages/InsertProduct'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </Routes>
         <Routes>
           <Route path="Index" element={<IndexContents />} />
+          <Route path="IngresarProducto" element={<InsertProduct />} />
         </Routes>
       </BrowserRouter>
     </AutoProvider>
