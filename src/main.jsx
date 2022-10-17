@@ -8,6 +8,7 @@ import Registrace from './pages/Registrace'
 import IndexContents from './pages/IndexContents'
 import InsertProduct from './pages/InsertProduct'
 import './index.css'
+import UpdateProduct from './pages/UpdateProduct'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="Index" element={<IndexContents />} />
           <Route path="IngresarProducto" element={<InsertProduct />} />
+          <Route path="IditarProducto/:id" element={<UpdateProduct />} />
         </Routes>
       </BrowserRouter>
     </AutoProvider>
