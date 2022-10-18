@@ -6,9 +6,9 @@ import App from './App'
 import IniciarSesion from './pages/IniciarSesion'
 import Registrace from './pages/Registrace'
 import IndexContents from './pages/IndexContents'
-import InsertProduct from './pages/InsertProduct'
+import InsertProduct from './pages/product/InsertProduct'
+import UpdateProduct from './pages/product/UpdateProduct'
 import './index.css'
-import UpdateProduct from './pages/UpdateProduct'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

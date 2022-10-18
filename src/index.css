@@ -64,6 +64,13 @@
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
+.sub-title{
+  font-weight: bold;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
 .mainSpan{
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
@@ -99,6 +106,9 @@
 }
 /* InserProduct */
 
+.navbar-brand:focus, .navbar-brand:hover {
+  color: #bbb8b8;
+}
  
 .footer{
   --tw-bg-opacity: 1;

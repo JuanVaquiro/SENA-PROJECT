@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import Swal from 'sweetalert2';
-import Constante from '../constan';
+import Constante from '../../constan';
 
 const TableProduct = () => {
   const [product, setProduct] = useState([]);
@@ -61,11 +61,13 @@ const TableProduct = () => {
   return (
     <Fragment>
     <ToastContainer></ToastContainer>
+    <h2 className='sub-title'>TABLA PRODUCTO</h2>
     <div>
-    <Link to="/IngresarProducto">
+    <Link style={{float: 'right', margin:'8px 55px'}} to="/IngresarProducto">
       <button className='btn btn-success'>Nuevo Producto</button>
     </Link>
     </div>
+    <div style={{whith: '90%'}}>
     <table className="table table-striped table-hover">
       <thead className='table-dark'>
         <tr>
@@ -100,6 +102,7 @@ const TableProduct = () => {
         ))}
       </tbody>
     </table>
+    </div>
     </Fragment>
   )
 }
