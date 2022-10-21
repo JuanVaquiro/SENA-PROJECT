@@ -11,7 +11,7 @@
 .left {
   left: 0;
   --tw-bg-opacity: 1;
-  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+  background-color: rgb(12 74 110 );
 }
 
 /* Control the right side */
@@ -27,7 +27,7 @@
 }
 
 .subtitulo-left{
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .formData{
@@ -132,22 +132,22 @@
 
 @media (min-width: 640px) {
   .sub-contener-div_1 {
-      max-width: 640px;
+    max-width: 640px;
   }
 }
 @media (min-width: 768px) {
   .sub-contener-div_1 {
-      max-width: 768px;
+    max-width: 768px;
   }
 
   .md\:text-left {
-      text-align: left;
+    text-align: left;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:pb-24 {
-      padding-bottom: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -157,5 +157,9 @@
   }
   .img-cilca{
     width: 100%;
+  }
+
+  body{
+    display: flex;
   }
 }

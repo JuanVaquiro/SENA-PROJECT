@@ -21,10 +21,10 @@ const Navbar2 = () => {
         <Link className="navbar-brand" to="/Index">
           Producto
         </Link>
-        <Link className="navbar-brand" to="/login">
+        <Link className="navbar-brand" to="/Cliente">
           Cliente
         </Link>
-         <Link className="navbar-brand" to="/login">
+         <Link className="navbar-brand" to="/Factura">
           Factura
         </Link>
         <button

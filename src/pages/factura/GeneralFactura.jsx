@@ -1,8 +1,11 @@
-import React from 'react'
+import Navbar2 from "../../components/Navbar2"
 
 const GeneralFactura = () => {
   return (
-    <div>GeneralFactura</div>
+    <div>
+      <Navbar2/>
+      <h2 className='sub-title'>GENERAR FACTURA</h2>
+    </div>
   )
 }
 
