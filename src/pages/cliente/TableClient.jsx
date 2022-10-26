@@ -79,8 +79,9 @@ const TableClient = () => {
               <th>#</th>
               <th>NOMBRE</th>
               <th>APELLIDO</th>
-              <th>TELEFONO</th>
+              <th>DOCUMENTO</th>
               <th>DIRECCION</th>
+              <th>TELEFONO</th>
               <th>EMAIL</th>
               <th>MODIFICAR</th>
             </tr>
@@ -91,8 +92,9 @@ const TableClient = () => {
                 <td>{data.id}</td>
                 <td>{data.nombre}</td>
                 <td>{data.apellido}</td>
-                <td>{data.telefono}</td>
+                <td>{data.documento}</td>
                 <td>{data.direccion}</td>
+                <td>{data.telefono}</td>
                 <td>{data.email}</td>
                 <td className="edit">
                   <button

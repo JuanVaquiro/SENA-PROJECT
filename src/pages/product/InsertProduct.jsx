@@ -79,6 +79,7 @@ const InsertProduct = () => {
               type="text"
               className="form-control"
               id="nombre_producto"
+              required
             />
           </div>
           <div className="col-md-6">
@@ -91,6 +92,7 @@ const InsertProduct = () => {
               type="text"
               className="form-control"
               id="marca"
+              required
             />
           </div>
           <div className="col-md-6">
@@ -103,6 +105,7 @@ const InsertProduct = () => {
               type="text"
               className="form-control"
               id="modelo"
+              required
             />
           </div>
           <div className="col-md-6">
@@ -115,6 +118,7 @@ const InsertProduct = () => {
               type="number"
               className="form-control"
               id="precio"
+              required
             />
           </div>
           <div className="col-md-6">
@@ -127,6 +131,7 @@ const InsertProduct = () => {
               type="number"
               className="form-control"
               id="stock"
+              required
             />
           </div>
           <div className="col-12">

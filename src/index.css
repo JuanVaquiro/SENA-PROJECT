@@ -106,6 +106,20 @@
 }
 /* InserProduct */
 
+
+/* GenerarFactura */
+.generalFactur{
+  border: 1px solid #ced4da;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 100px;
+}
+/* GenerarFactura */
+
 .navbar-brand:focus, .navbar-brand:hover {
   color: #bbb8b8;
 }

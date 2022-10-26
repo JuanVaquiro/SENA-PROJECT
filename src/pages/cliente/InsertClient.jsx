@@ -8,6 +8,7 @@ const InsertClient = () => {
     const [formData, setFormData] = useState({
       nombre: "",
       apellido: "",
+      documento: "",
       direccion: "",
       telefono: "",
       email: "",
@@ -44,6 +45,7 @@ const InsertClient = () => {
         setFormData({
           nombre: "",
           apellido: "",
+          documento: "",
           direccion: "",
           telefono: "",
           email: "",
@@ -78,6 +80,7 @@ const InsertClient = () => {
             type="text"
             className="form-control"
             id="nombre"
+            required
           />
         </div>
         <div className="col-md-6">
@@ -90,8 +93,22 @@ const InsertClient = () => {
             type="text"
             className="form-control"
             id="apellido"
+            required
           />
         </div>
+        <div className="col-md-6">
+        <label htmlFor="documento" className="form-label">
+          documento
+        </label>
+        <input
+          value={formData.documento}
+          onChange={handleChange}
+          type="text"
+          className="form-control"
+          id="documento"
+          required
+        />
+      </div>
         <div className="col-md-6">
           <label htmlFor="direccion" className="form-label">
             direccion
@@ -102,6 +119,7 @@ const InsertClient = () => {
             type="text"
             className="form-control"
             id="direccion"
+            required
           />
         </div>
         <div className="col-md-6">
@@ -114,6 +132,7 @@ const InsertClient = () => {
             type="text"
             className="form-control"
             id="telefono"
+            required
           />
         </div>
         <div className="col-md-6">
@@ -126,6 +145,7 @@ const InsertClient = () => {
             type="email"
             className="form-control"
             id="email"
+            required
           />
         </div>
         <div className="col-12">
