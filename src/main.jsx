@@ -20,15 +20,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="login" element={<IniciarSesion />} />
-          <Route path="Registrace" element={<Registrace />} />
-          <Route path="Index" element={<IndexContents />} />
-          <Route path="IngresarProducto" element={<InsertProduct />} />
-          <Route path="IditarProducto/:id" element={<UpdateProduct />} />
-          <Route path="Cliente" element={<TableClient />} />
-          <Route path="IngresarCliente" element={<InsertClient />} />
-          <Route path="IditarCliente/:id" element={<UpdateClient />} />
-          <Route path="Factura" element={<GeneralFactura />} />
+          <Route path="/login" element={<IniciarSesion />} />
+          <Route path="/Registrace" element={<Registrace />} />
+          <Route path="/Index" element={<IndexContents />} />
+          <Route path="/IngresarProducto" element={<InsertProduct />} />
+          <Route path="/IditarProducto/:id" element={<UpdateProduct />} />
+          <Route path="/Cliente" element={<TableClient />} />
+          <Route path="/IngresarCliente" element={<InsertClient />} />
+          <Route path="/IditarCliente/:id" element={<UpdateClient />} />
+          <Route path="/Factura" element={<GeneralFactura />} />
         </Routes>
       </BrowserRouter>
     </AutoProvider>
