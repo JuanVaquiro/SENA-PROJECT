@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AutoProvider>
       <BrowserRouter>
-        <Routes>
+        <Routes basename='/sena-project.vercel.app/'>
           <Route path="/" element={<App />} />
           <Route path="/login" element={<IniciarSesion />} />
           <Route path="/Registrace" element={<Registrace />} />
